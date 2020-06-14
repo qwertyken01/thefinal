@@ -1,0 +1,151 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+@keyframes slidein {
+  0% {
+    left: 100px;
+  }
+  25% {
+  }
+  50% {
+    transform: scale(0.3) rotate(-120deg);
+  }
+  100% {
+    left: 600px;
+  }
+}
+html,
+body {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: #f0e68c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 14px;
+  font-family: 微軟正黑體;
+  font-weight: 700;
+}
+
+a {
+  color: initial;
+  text-decoration: initial;
+}
+.box {
+  width: 380px;
+  background-color: #fff5ee;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+.box:hover {
+  box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.4);
+  transform: translate(-5px, -5px);
+}
+.box:hover .top {
+  height: 250px;
+}
+.top {
+  background-image: url(https://i.imgur.com/79Vgv6g.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 330px;
+  position: relative;
+  transition: 0.5s;
+}
+.top .tag {
+  position: relative;
+  border-width: 20px;
+  border-style: solid;
+  border-color: #73e68c transparent transparent;
+  height: 50px;
+  background-color: #a6ffcc;
+  float: right;
+  margin-right: 10px;
+}
+.top .name {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 5px 15px;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  background: linear-gradient(transparent 0%, black 100%);
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.top .name .smallText {
+  font-size: 14px;
+}
+.cirbutton {
+  text-align: center;
+  line-height: 45px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffff99;
+  border-radius: 20%;
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+}
+.bottom {
+  padding: 10px 20px 20px 20px;
+}
+.bottom li {
+  padding: 5px 0px;
+}
+.bottom h3 {
+  display: inline-block;
+}
+.bottom ul {
+  list-style: nono;
+  padding-left: 0;
+}
+.buttons {
+  margin-top: 30px;
+}
+.buttons .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  letter-spacing: 2px;
+}
+.btnWebsite {
+  line-height: 65px;
+  text-align: center;
+  width: 100px;
+  height: 75px;
+  border-radius: 100% 0 0 0;
+  background: #afeeee;
+  color: white;
+  transition: 0.5s;
+}
+.cirbutton:hover {
+  background-color: #ff69b4;
+}
+.btnWebsite:hover {
+  background-color: #e68ab8;
+}
+.btnNews {
+  line-height: 65px;
+  text-align: center;
+  width: 100px;
+  height: 75px;
+  border-radius: 0 100% 0 0;
+  background: #afeeee;
+  color: white;
+  transition: 0.5s;
+  float: right;
+}
+
+.btnNews:hover {
+  background-color: #e68ab8;
+}
